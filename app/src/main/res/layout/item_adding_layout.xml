@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Make sure to replace 'com.yourpackage' with your actual package name where FocusHandlingLayout is located -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:focusable="true"
+    android:clickable="true"
+    android:focusableInTouchMode="true">
+
+    <!-- Example of other views inside your custom layout -->
+    <ListView
+        android:id="@+id/listViewItems"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:focusable="true"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:descendantFocusability="beforeDescendants" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/buttonAddItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="추가"/>
+
+    <EditText
+        android:id="@+id/AddMainText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="New Item 등록"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/AddSubItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Brand"
+        android:inputType="textPersonName"
+        android:visibility="gone"/>  <!-- Initially hidden -->
+
+
+
+
+</LinearLayout>

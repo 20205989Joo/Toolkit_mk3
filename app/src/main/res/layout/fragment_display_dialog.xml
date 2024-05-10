@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/gold_border">
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="27sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="top|center"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="#809F8473"/>
+
+    <ListView
+        android:id="@+id/listViewDisplayItems"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="78dp"/>
+
+    <Button
+        android:id="@+id/buttonEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:layout_gravity="bottom|end"
+        android:background="@color/editbutton"
+        android:textColor="@android:color/white"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/buttonClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="미러 테스팅"
+        android:layout_gravity="top|end"
+        android:background="@android:color/transparent"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+
+</FrameLayout>

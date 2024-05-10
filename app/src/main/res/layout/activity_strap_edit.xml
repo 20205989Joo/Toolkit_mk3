@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hgl">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:background="#FFFFFF">
+
+        <!-- X 좌표를 입력하는 EditText -->
+        <EditText
+            android:id="@+id/strapX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="x좌표"
+            android:inputType="number"/>
+
+        <!-- Y 좌표를 입력하는 EditText -->
+        <EditText
+            android:id="@+id/strapY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="y좌표"
+            android:inputType="number"/>
+
+        <!-- 나타낼 텍스트를 입력하는 EditText -->
+        <EditText
+            android:id="@+id/strapTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="텍스트 입력"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/strapSubtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="텍스트 입력"
+            android:inputType="text"/>
+
+        <!-- 좌표 및 텍스트를 저장하는 버튼 -->
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="저장"/>
+    </LinearLayout>
+
+    <!-- 저장된 항목을 표시하는 ListView -->
+    <ListView
+        android:id="@+id/listViewItems"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom"
+        android:background="@color/editbutton"/>
+
+</FrameLayout>

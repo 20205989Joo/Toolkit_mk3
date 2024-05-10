@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="CustomDialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item> <!-- 타이틀 바 제거 -->
+        <item name="android:windowBackground">@android:color/transparent</item> <!-- 배경 투명 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--<item name="android:background">@drawable/dialog_background</item> -->
+    </style>
+
+    <style name="CustomTextStyle">
+        <item name="android:textColor">@color/red</item>  <!-- 색상 리소스를 사용 -->
+    </style>
+
+</resources>

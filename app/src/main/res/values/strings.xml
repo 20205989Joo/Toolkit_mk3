@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Toolkit_management_mk3</string>
+    <string name="title_activity_pocket">PocketActivity</string>
+    <string name="title_activity_display">Display Activity</string> <!-- 추가될 문자열 -->
+    <string name="title_activity_main">Main Activity</string>
+    <string name="title_activity_check">Check Activity</string>
+    <string name="title_activity_main_2">Main Activity 2</string>
+    <string name="title_activity_zoom_in">Main Activity 2</string>
+
+</resources>
